@@ -16,6 +16,7 @@ prods = set([])
 for i in range(365):
     d += one_day
     prods.add(d.day * d.month)
+prods.add(2 * 29) # leap day
 
 #2. 
 lprods = list(prods)
