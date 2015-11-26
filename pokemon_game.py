@@ -22,7 +22,7 @@ prods.add(2 * 29) # leap day
 lprods = list(prods)
 prods = set([])
 for p in lprods:
-    for k in range(2,13): # Names are never longer than 12 chars
+    for k in range(1,13): # Names are never longer than 12 chars
         prods.add(p*k)
 
 #3.
@@ -34,6 +34,7 @@ for p in lprods:
     prods.add(p)
 nprods = set(range(1,max(prods))) - prods
 lprods = list(nprods)
+
 #4.
 pat = "\{\{rdex\|\d{3}\|(\d{3})\|([A-Za-z ]+)\|\d(?:\|[A-Za-z]+){1,2}\}\}"
 prog = re.compile(pat)
